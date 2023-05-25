@@ -34,11 +34,11 @@ const ExercisesScreen = () => {
 
   return (
     <View className="h-full w-full my-10">
-      <Text className="text-3xl font-bold mx-4">Exercises</Text>
+      <Text className="text-3xl font-bold mx-4">Ćwiczenia</Text>
       <TextInput
         className="bg-gray-300 mx-4 my-2 p-1"
         value={name}
-        placeholder="Search"
+        placeholder="Szukaj"
         onChangeText={setName}
       />
       <View className="flex-row w-full justify-evenly items-center">
@@ -53,20 +53,19 @@ const ExercisesScreen = () => {
           }}
           onValueChange={(itemValue, itemIndex) => setBodyPart(itemValue)}
         >
-          <Picker.Item label="Any Body Part" value="" />
+          <Picker.Item label="Każda część ciała" value="" />
           <Picker.Item label="biceps" value="biceps" />
-          <Picker.Item label="forearms" value="forearms" />
-          <Picker.Item label="lats" value="lats" />
+          <Picker.Item label="przedramie" value="forearms" />
+          <Picker.Item label="mięsień najszerszy" value="lats" />
           <Picker.Item label="quadriceps" value="quadriceps" />
-          <Picker.Item label="abdominals" value="abdominals" />
-          <Picker.Item label="middle_back" value="middle_back" />
-          <Picker.Item label="adductors" value="adductors" />
-          <Picker.Item label="calves" value="calves" />
-          <Picker.Item label="forearms" value="forearms" />
-          <Picker.Item label="glutes" value="glutes" />
-          <Picker.Item label="hamstrings" value="hamstrings" />
+          <Picker.Item label="brzuch" value="abdominals" />
+          <Picker.Item label="środek pleców" value="middle_back" />
+          <Picker.Item label="przywodziciele" value="adductors" />
+          <Picker.Item label="łydki" value="calves" />
+          <Picker.Item label="pośladki" value="glutes" />
+          <Picker.Item label="uda" value="hamstrings" />
           <Picker.Item label="triceps" value="triceps" />
-          <Picker.Item label="chest" value="chest" />
+          <Picker.Item label="klatka piersiowa" value="chest" />
         </Picker>
         <Picker
           selectedValue={equipment}
@@ -78,10 +77,10 @@ const ExercisesScreen = () => {
           }}
           onValueChange={(itemValue, itemIndex) => setEquipment(itemValue)}
         >
-          <Picker.Item label="Any Category" value="" />
-          <Picker.Item label="machine" value="machine" />
-          <Picker.Item label="dumbell" value="dumbell" />
-          <Picker.Item label="other" value="other" />
+          <Picker.Item label="Każda kategoria" value="" />
+          <Picker.Item label="maszyna" value="machine" />
+          <Picker.Item label="ciężarki" value="dumbell" />
+          <Picker.Item label="inne" value="other" />
         </Picker>
       </View>
       <FlatList

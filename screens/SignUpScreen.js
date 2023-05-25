@@ -45,18 +45,22 @@ const SignUpScreen = ({ route, navigation }) => {
         className="h-10 w-60 border-2 p-2"
         onChangeText={setPassword}
         value={password}
-        placeholder="password"
+        placeholder="hasło"
         secureTextEntry
       />
       <TouchableOpacity
         onPress={signIn ? handleSignIn : handleSignUp}
         className="bg-gray-600 w-60 items-center justify-center h-10 mt-2"
       >
-        <Text className="text-slate-50">{signIn ? "Sign In" : "Sign Up"}</Text>
+        <Text className="text-slate-50">
+          {signIn ? "Zaloguj się" : "Zarejestruj się"}
+        </Text>
       </TouchableOpacity>
       <Text className="text-red-500">{error}</Text>
       <View className="flex-row gap-1 mt-2">
-        <Text>{signIn ? "Dont have an account?" : "Already signed up?"}</Text>
+        <Text>
+          {signIn ? "Nie masz jeszcze konta?" : "Już zarejestrowany?"}
+        </Text>
         <TouchableOpacity
           onPress={() => {
             setError("");
@@ -66,7 +70,7 @@ const SignUpScreen = ({ route, navigation }) => {
             });
           }}
         >
-          <Text>{signIn ? "Sign Up" : "Sign In"}</Text>
+          <Text>{signIn ? "Zarejestruj się" : "Zaloguj się"}</Text>
         </TouchableOpacity>
       </View>
     </View>

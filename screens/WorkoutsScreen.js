@@ -46,17 +46,17 @@ const WorkoutsScreen = () => {
 
   return (
     <View className="h-full w-full my-10">
-      <Text className="text-3xl font-bold mx-4">Workouts</Text>
+      <Text className="text-3xl font-bold mx-4">Treningi</Text>
       <TouchableOpacity
         className="bg-gray-600 p-2 m-2 rounded-md"
         onPress={() => setModal(true)}
       >
         <Text className="text-slate-100 text-center">
-          Create new workout +{" "}
+          Stwórz nowy trening +{" "}
         </Text>
       </TouchableOpacity>
       <Text className="px-4 text-bold uppercase text-blue-500">
-        your Workouts
+        Twoje treningi
       </Text>
       <FlatList
         className="w-full h-3/4 py-2 px-4"

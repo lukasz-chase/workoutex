@@ -22,12 +22,12 @@ const ProfileScreen = () => {
   };
   return (
     <View className="h-full justify-center items-center">
-      <Text className="text-xl">Hello {user?.email}</Text>
+      <Text className="text-xl">Witaj {user?.email}</Text>
       <TouchableOpacity
         className="bg-gray-600 p-2 m-2 rounded-md"
         onPress={handleSingOut}
       >
-        <Text className="text-gray-300">Sign Out</Text>
+        <Text className="text-gray-300">Wyloguj się</Text>
       </TouchableOpacity>
       <Nav />
     </View>

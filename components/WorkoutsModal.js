@@ -70,15 +70,15 @@ const WorkoutsModal = ({ visible, setVisible }) => {
       <View className="bg-slate-100 h-screen w-screen p-4">
         <View>
           <Text className="text-bold text-center py-4 text-xl uppercase">
-            Workout Creation
+            Tworzenie treningu
           </Text>
           <TextInput
             value={workout.name}
             className="bg-slate-100 border-2 border-black p-2"
-            placeholder="workout name"
+            placeholder="nazwa treningu"
             onChangeText={(text) => setWorkout({ ...workout, name: text })}
           />
-          <Text className="pt-2">Exercises</Text>
+          <Text className="pt-2">Treningi</Text>
           <FlatList
             className="w-full py-2 px-4"
             contentContainerStyle={{
@@ -99,7 +99,7 @@ const WorkoutsModal = ({ visible, setVisible }) => {
             className="mx-auto border-2 border-black p-4 rounded-md"
             onPress={() => setModal(true)}
           >
-            <Text>Add exercise</Text>
+            <Text>Dodaj ćwiczenie</Text>
           </Pressable>
           <Text className="text-bold text-red-500 uppercase text-center pt-4">
             {error}
@@ -109,13 +109,13 @@ const WorkoutsModal = ({ visible, setVisible }) => {
               className="bg-red-300 p-4 rounded-md"
               onPress={closeModal}
             >
-              <Text>Cancel</Text>
+              <Text>Anuluj</Text>
             </Pressable>
             <Pressable
               className="bg-blue-300 p-4 rounded-md"
               onPress={handleSaveWorkout}
             >
-              <Text>Save Workout</Text>
+              <Text>Zapisz trening</Text>
             </Pressable>
           </View>
         </View>

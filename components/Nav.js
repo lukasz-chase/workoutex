@@ -10,19 +10,19 @@ const Nav = () => {
         onPress={() => navigation.navigate("Profile")}
         className="py-2 bg-"
       >
-        <Text className="color-gray-300">Profile</Text>
+        <Text className="color-gray-300">Profil</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => navigation.navigate("Exercises")}
         className="py-2"
       >
-        <Text className="color-gray-300">Exercises</Text>
+        <Text className="color-gray-300">Ćwiczenia</Text>
       </TouchableOpacity>
       <TouchableOpacity
         onPress={() => navigation.navigate("Workouts")}
         className="py-2"
       >
-        <Text className="color-gray-300">Workouts</Text>
+        <Text className="color-gray-300">Treningi</Text>
       </TouchableOpacity>
     </View>
   );
