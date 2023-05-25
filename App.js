@@ -8,6 +8,7 @@ import ExerciseScreen from "./screens/ExerciseScreen";
 import CreateWorkoutScreen from "./screens/WorkoutsScreen";
 import ExercisesScreen from "./screens/ExercisesScreen";
 import WorkoutScreen from "./screens/WorkoutScreen";
+import CompassScreen from "./screens/CompassScreen";
 
 export default function App() {
   const Stack = createNativeStackNavigator();
@@ -48,6 +49,11 @@ export default function App() {
           <Stack.Screen
             name="Workout"
             component={WorkoutScreen}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Compass"
+            component={CompassScreen}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>

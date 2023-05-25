@@ -24,6 +24,12 @@ const Nav = () => {
       >
         <Text className="color-gray-300">Treningi</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => navigation.navigate("Compass")}
+        className="py-2"
+      >
+        <Text className="color-gray-300">Kompas</Text>
+      </TouchableOpacity>
     </View>
   );
 };
